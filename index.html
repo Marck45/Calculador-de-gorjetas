@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Gorjetas</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Calcule a Gorjeta</h1>
+    </header>
+    <main>
+        <div class="calc-gorjetas">
+            <label>Nome do Cliente:</label>
+            <input type="text" id="nome-cliente" placeholder="Nome do cliente" required> 
+            <label>Valor da conta</label>
+            <input type="number" id="valor-conta" placeholder="Valor conta" required>
+        </div>
+        <div class="percentual">
+            <h2>Valor de gorjeta</h2>
+            <div class="btn-percentual">
+                <button class="btn-1">1%</button>
+                <button class="btn-2">2,5%</button>
+                <button class="btn-3">5%</button>
+                <button class="btn-4">10%</button>
+            </div>
+        </div>
+        <div id="resultado-conta">
+            
+        </div>
+    </main>
+    <script src="/script/index.js" ></script>
+</body>
+</html>
