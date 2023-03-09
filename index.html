@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculador de Gorjetas</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/script/index.js" defer></script>
     
 </head>
 <body>
-    <header>
-        <h1>Calcule a Gorjeta</h1>
-    </header>
-    <main>
+    <div id="main-container">
         <div class="calc-gorjetas">
             <label>Nome do Cliente:</label>
             <input type="text" id="nome-cliente" placeholder="Nome do cliente" required> 
@@ -20,7 +18,7 @@
             <input type="number" id="valor-conta" placeholder="Valor conta" required>
         </div>
         <div class="percentual">
-            <h2>Valor de gorjeta</h2>
+            <h2>Percentual de gorjeta</h2>
             <div class="btn-percentual">
                 <button class="btn-1">1%</button>
                 <button class="btn-2">2,5%</button>
@@ -29,9 +27,17 @@
             </div>
         </div>
         <div id="resultado-conta">
-            
         </div>
-    </main>
-    <script src="/script/index.js" ></script>
+    </div>
+    <div id="cotação" >
+        <div class="dados-conta" id="dados-conta">
+            <h1>Dados de conta para pagamento:</h1>
+            <h3>Data: 09/03/2023</h3>
+            <p>Nome do cliente:</p>
+            <p>Valor da gasto:</p>
+            <p>Gorjeta:</p>
+            <p>VALOR TOTAL:</p>
+        </div>
+    </div>
 </body>
 </html>

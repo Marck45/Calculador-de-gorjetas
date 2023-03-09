@@ -3,57 +3,79 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
+    color: #fff;
 }
 
-header{
-    margin: 30px;
-    text-align: center;
-    text-transform: uppercase;
+body{
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
-main{
+#main-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: #4b5 solid 3px;
+    border-radius: 2.5rem;
+    height: 80vh;
+    width: 47.5%;
 }
+
 
 input{
     height: 20px;
     width: 300px;
     border-radius: 5px;
     padding: 1rem;
+    color: #4b5;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .calc-gorjetas{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 2rem;
 }
 .calc-gorjetas label{
     margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .percentual{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 10px;
+    width: 40%;
 }
 .percentual h2{
     font-size: 30px;
     margin-bottom: 25px;
+    text-align: center;
+}
+
+.btn-percentual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .btn-percentual button{
-    margin: 5px;
+    margin: 2px;
     height: 30px;
     width: 100px;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #4b5;
     color: #fff;
     font-weight: bold;
@@ -107,9 +129,7 @@ input{
 #resultado-conta{
     text-transform: uppercase;
     text-align: center;
-    border: 3px solid #4b5;
     padding: 1rem;
-    border-radius: 5px;
 }
 
 #resultado-conta H1{
@@ -119,4 +139,25 @@ input{
 
 #resultado-conta p{
     font-size: 32px;
+}
+
+#cotação{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #4b5 solid 3px;
+    border-radius: 2.5rem;
+    height: 70vh;
+    width: 47.5%;
+}
+
+#cotação h1{
+    margin-bottom: 25px;
+    font-size: 38px;
+}
+
+#cotação p, h3{
+    margin: 50px 0px 0px 0px;
+    font-size: 28px;
+    font-weight: bold;
 }
